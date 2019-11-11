@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -19,4 +19,12 @@
 
 .App-link {
   color: #09d3ac;
+} */
+.react{
+  background:aqua;
+  color:black;
+  font-size: 48px;
+  font-weight:bold;
+  padding: 16px;
+
 }
