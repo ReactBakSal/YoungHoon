@@ -72,7 +72,7 @@ export default ValidationSample;
 ```
 
 ```input``` 에서는 onChange 이벤트가 발생하면 handleChange를 호출하여 ```state```의 ```password``` 값을 데이트하게 했습니다.
-```button``` 에서는 ```onClick``` 이벤트가 발생하면 ```handleButtonClick```을 호출하여 ```Clicked``` 값을 참으로 설정했고, ```validated```값을 검증 결과로 설장했습니다.
+```button``` 에서는 ```onClick``` 이벤트가 발생하면 ```handleButtonClick```을 호출하여 ```Clicked``` 값을 참으로 설정했고, ```validated```값을 검증 결과로 설정했습니다.
 
 ### App 컴포넌트에서 예제 컴포넌트 렌더링
 
@@ -103,6 +103,7 @@ export default App;
 
 이때는 어쩔 수 없이 DOM 에 직접적으로 접근해야 하는데, 이를위해 바로 ```ref```를 사용합니다.
 
+[목차로 돌아가기](#index)
 
 ## ref사용
 
@@ -117,8 +118,43 @@ export default App;
 ```
 <input ref={(ref)=> {this.input=ref}} />
 ```
+이렇게 하면 앞으로 this.input은 input 요소의 DOM을 가리킵니다. ref의 이름은 원하는 것으로 자유롭게 지정할 수 있습니다. DOM 타입과 관계없이
+this.superman = ref 처럼 마음대로 지정합니다.
+
+### createRef를 통한 ref 설정
+
+ref를 만드는 또 다른 방법은 리액트에 내장되어 있는 createRef라는 함수를 사용하는 것입니다.
+이 함수를 사용해서 만들면 더 적은 코드로 쉽게 사용할 수 있습니다.
+
+예시코드를 한번 살펴봅시다.
+
+```
+import React, { Component } from 'react';
+
+class RefSample extends Component {
+    input = React.createRef();
+
+    handleFocus = () =>{
+        this.input.current.focus();
+    }
+
+    render() {
+        return(
+            <div>
+                <input ref = {this.input} />
+            </div>
+        );
+    }
+}
+
+export default RefSample;
+```
+
+[목차로 돌아가기](#index)
+## ref컴포넌트
 
 
-## 컴포넌트
-
+[목차로 돌아가기](#index)
 ## 정리
+
+[목차로 돌아가기](#index)
