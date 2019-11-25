@@ -14,7 +14,7 @@
 - 코드 재사용
 
 ### useReducer로 작성했던 Info.js
-```
+```js
 import React, { useReducer} from 'react';
 
 function reducer(state, action){
@@ -59,7 +59,7 @@ export default Info;
 
 ### useInputs.js
 
-```
+```js
 import {useReducer} from 'react';
 
 function reducer(state,action){
@@ -81,7 +81,7 @@ export default function useInputs(initialForm) {
 
 ### Info.js
 
-```
+```js
 import React from 'react';
 import useInputs from './useInputs';
 
