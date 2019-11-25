@@ -57,8 +57,6 @@ export default Info;
 
 커스텀 Hooks를 만드는 방법은 ```useState```, ```useEffect```, ```useReducer```, ```useCallback``` 등 Hooks를 사용하여 원하는 기능을 구현해주고, 컴포넌트에서 사용하고 싶은 값들을 반환해 주면 된다.
 
-다음 예제에서는 ```useReducer```를 반환
-
 ### useInputs.js
 
 ```
