@@ -8,6 +8,10 @@
 
 ## customHook
 
+커스텀훅 
+- 반복되는 로직
+- 비슷한 코드
+- 코드 재사용
 
 ### useReducer로 작성했던 Info.js
 ```
@@ -49,6 +53,11 @@ const Info = () =>{
 
 export default Info;
 ```
+커스텀 Hooks를 만들때에는 보통 ```use```라는 키워드로 시작하는 파일을 만들고 그 안에 함수를 작성.
+
+커스텀 Hooks를 만드는 방법은 ```useState```, ```useEffect```, ```useReducer```, ```useCallback``` 등 Hooks를 사용하여 원하는 기능을 구현해주고, 컴포넌트에서 사용하고 싶은 값들을 반환해 주면 된다.
+
+다음 예제에서는 ```useReducer```를 반환
 
 ### useInputs.js
 
