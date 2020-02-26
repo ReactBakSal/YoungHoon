@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 //import Counter from './components/Counter';
-import Average from './components/Average'
+import SassComponent from './components/SassComponent';
 
 const App = () =>{
   const [visible, setVisible] = useState(true);
@@ -14,7 +14,7 @@ const App = () =>{
         {visible ? '숨기기' : '보이기'}
       </button>
       <hr />
-      {visible && <Average />}
+      {visible && <SassComponent />}
     </div>
   
   );
